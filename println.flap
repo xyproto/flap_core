@@ -1,6 +1,12 @@
-// Standard library: println function
+// Standard library: println function with multiple dispatch
 // Prints a value followed by a newline
-// Pure Flap implementation using printf
+// Multiple definitions handle different types
 
-// println is implemented by calling printf with %v
-println = (x) -> printf("%v\n", x)
+// println for strings - uses %s format
+println = (x) -> printf("%s\n", x)
+
+// println for numbers - uses %.15g format (smart float printing)
+println = (x) -> printf("%.15g\n", x)
+
+// println for booleans - uses %b format (yes/no)
+println = (x) -> printf("%b\n", x)
