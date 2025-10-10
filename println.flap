@@ -3,4 +3,4 @@
 // Pure Flap implementation using printf
 
 // println is implemented by calling printf with %v
-println = (x) => printf("%v\n", x)
+println = (x) -> printf("%v\n", x)
