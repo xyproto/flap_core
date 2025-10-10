@@ -1,0 +1,6 @@
+// Standard library: println function
+// Prints a value followed by a newline
+// Pure Flap implementation using printf
+
+// Uses %v format specifier which handles any type (string, number, etc.)
+println = (x) => printf("%v\n", x)
