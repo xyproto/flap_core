@@ -1,0 +1,3 @@
+// map applies a function to each element of a list
+// map(x => x * 2, [1, 2, 3]) => [2, 4, 6]
+map = f, list => (@+ result = []; x in list; result + [f(x)])[0]

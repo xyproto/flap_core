@@ -1,5 +1,0 @@
-// Standard library: println function with multiple dispatch
-// Prints a value followed by a newline
-// Comma-separated lambda variants handle different types
-
-println = (x) -> printf("%s\n", x), (x) -> printf("%.15g\n", x), (x) -> printf("%b\n", x)

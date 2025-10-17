@@ -1,0 +1,3 @@
+// filter keeps only elements where predicate returns yes
+// filter(x => x > 2, [1, 2, 3, 4]) -> [3, 4]
+filter = pred, list => reduce(acc, x => pred(x) { -> acc + [x] ~> acc }, list, [])

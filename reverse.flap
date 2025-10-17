@@ -1,0 +1,3 @@
+// reverse reverses a list using slice notation
+// reverse([1, 2, 3]) -> [3, 2, 1]
+reverse = list => list[::-1]

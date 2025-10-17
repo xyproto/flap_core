@@ -1,0 +1,4 @@
+// contains checks if a value exists in a list using tail recursion
+// contains([1, 2, 3], 2) -> 1 (yes)
+// contains([1, 2, 3], 4) -> 0 (no)
+contains = list, value => (#list == 0) { -> 0 ~> (list[0] == value) { -> 1 ~> me(list[1::], value) } }
